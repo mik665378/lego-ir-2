@@ -1,0 +1,9 @@
+workflows:
+  android-workflow:
+    name: Android Workflow
+    scripts:
+      - name: Build Android
+        script: |
+          ./gradlew assembleDebug
+    artifacts:
+      - build/app/outputs/flutter-apk/app-debug.apk
